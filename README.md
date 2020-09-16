@@ -10,4 +10,6 @@ gcc huffman.c priority_minheap.c -o huffmancoder (or anything) (optional : -fsan
 to compile source code.
 <br>
 <br>
+<br> This program takes string and create dictionary in file dict.dat and actual encoded string in code.dat.
+<br> Run decode to decode the encoded string back.
 Note : This code does not do compression. Produced code should be packed in byte in the form of bits to produce compressed output. And it implements priority queue with lowerst priority in the form of minheap. And is completely memory safe (not buffer overflow safe though). Any buffer can be extended as per requirement. 
