@@ -6,10 +6,18 @@ For example : optimal binary prefix code for string :
 is <br> _ -> 00 <br> d -> 01 <br> a-> 10 <br> e -> 110 <br> c -> 1110 <br> b -> 1111 <br>
 <br> 
 <br>
-gcc huffman.c priority_minheap.c -o huffmancoder (or anything) (optional : -fsanitize=address)<br>
+gcc huffman.c priority_minheap.c -o huffmancoder (or anything) (optional : -fsanitize=address for linux users)<br>
 to compile source code.
 <br>
 <br>
-<br> This program takes string and create dictionary in file dict.dat and actual encoded string in code.dat.
-<br> Run decode to decode the encoded string back.
+<br> gcc huffmandecoder.c -o huffmandecoder (to compile decoder)
+<br>
+<br>
+<br> How to Use
+<br> Run ./huffmandecoder (simple huffmandecoder for windows )  (need code.dat and dict.dat in same folder) to decode back code.dat using dictionary dict.dat
+<br> Run ./huffmanencoder <filename> (simply huffmanencoder <filename> for win)   to generate code.dat and dict.dat that contains encoded <filename> 
+ <br>
+ <br>
+ Caution : For very large file, change #define CHAR_LENGTH in huffman.h to be 20.
+ <br>
 Note : This code does not do compression. Produced code should be packed in byte in the form of bits to produce compressed output. And it implements priority queue with lowerst priority in the form of minheap. And is completely memory safe (not buffer overflow safe though). Any buffer can be extended as per requirement. 
