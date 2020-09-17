@@ -14,9 +14,10 @@ to compile source code.
 <br>
 <br>
 <br> How to Use
-<br> Run ./huffmandecoder (simple huffmandecoder for windows )  (need code.dat and dict.dat in same folder) to decode back code.dat using dictionary dict.dat
+<br> Run ./huffmandecoder (simple huffmandecoder for windows )  (need code.dat and dict.dat in same folder) to decode back code.dat using dictionary dict.dat and gives output.dat 
 <br> Run ./huffmanencoder <filename> (simply huffmanencoder <filename> for win)   to generate code.dat and dict.dat that contains encoded <filename> 
  <br>
+ <br> Running decoder with above code.dat and dict.dat generates huffma encoder code (same as in /src but combined in one file i.e huffman.h + priority_minheap.c + huffman.c in single file) and then can be compiled as standalone c file. Simply, change output.dat to output.c and compile with gcc
  <br>
  Caution : For very large file, change #define CHAR_LENGTH in huffman.h to be 20.
  <br>
