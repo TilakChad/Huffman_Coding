@@ -25,4 +25,4 @@ Note : This code does not do compression. Produced code should be packed in byte
  
  <br>
  <br>
- Huffman coding, by itself, doesn't do compression (althout it produce efficient code than its ascii counterpart). It is used as a basic for other run length encoding and compression algorithms like lzw and inflate(used by png, zip, 7z and tar).
+ Huffman coding, by itself, doesn't do compression (althoug it produces compact code than its ascii counterpart). It is used as a basis for other run length encoding and compression algorithms like lzw and inflate(used by png, zip, 7z and tar).
