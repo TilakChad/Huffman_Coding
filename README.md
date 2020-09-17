@@ -22,3 +22,7 @@ to compile source code.
  Caution : For very large file, change #define CHAR_LENGTH in huffman.h to be 20.
  <br>
 Note : This code does not do compression. Produced code should be packed in byte in the form of bits to produce compressed output. And it implements priority queue with lowerst priority in the form of minheap. And is completely memory safe (not buffer overflow safe though). Any buffer can be extended as per requirement. 
+ 
+ <br>
+ <br>
+ Huffman coding, by itself, doesn't do compression (althout it produce efficient code than its ascii counterpart). It is used as a basic for other run length encoding and compression algorithms like lzw and inflate(used by png, zip, 7z and tar).
